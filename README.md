@@ -1,84 +1,125 @@
-<!-- markdownlint-disable-next-line -->
-<div align="center">
+# Harsha's Blog
 
-  <!-- markdownlint-disable-next-line -->
-  # Chirpy Jekyll Theme
+Welcome to the source code of my personal blog! This is where I share insights from self-help books I read, programming discoveries, AI tools, and other interesting things I come across in my journey as a Software Engineer at Microsoft.
 
-  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
+🌐 **Live Site**: [https://saiharshak.github.io](https://saiharshak.github.io)
 
-  [![CI](https://img.shields.io/github/actions/workflow/status/cotes2020/jekyll-theme-chirpy/ci.yml?logo=github)][ci]&nbsp;
-  [![Codacy Badge](https://img.shields.io/codacy/grade/4e556876a3c54d5e8f2d2857c4f43894?logo=codacy)][codacy]&nbsp;
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy?color=goldenrod)][license]&nbsp;
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?&logo=RubyGems&logoColor=ghostwhite&label=gem&color=orange)][gem]&nbsp;
-  [![Open in Dev Containers](https://img.shields.io/badge/Dev_Containers-Open-deepskyblue?logo=linuxcontainers)][open-container]
+## About This Blog
 
-  [**Live Demo** →][demo]
+This blog is built with Jekyll using the beautiful [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy). Here's what you'll find:
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+- **📚 Book Reviews & Insights**: Deep dives into self-help and personal development books
+- **💻 Programming Discoveries**: Tips and learnings from working with C#, C++, and AI tools
+- **🤖 AI Tools & Productivity**: How I leverage artificial intelligence in my daily workflow
+- **📖 Light Novel Reviews**: Occasional thoughts on Xianxia light novels
+- **🎯 Personal Growth**: Reflections on applying lessons from books to real life
 
-</div>
+## 🚀 Local Development Setup
 
-## Features
+### Prerequisites
+- Ruby (3.1 or higher)
+- Bundler gem
+- Git
 
-- Dark Theme
-- Localized UI language
-- Pinned Posts on Home Page
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagrams & Flowcharts
-- Dark Mode Images
-- Embed Media
-- Comment Systems
-- Built-in Search
-- Atom Feeds
-- PWA
-- Web Analytics
-- SEO & Performance Optimization
+### Installation & Running Locally
 
-## Documentation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SaiHarshaK/saiharshak.github.io.git
+   cd saiharshak.github.io
+   ```
 
-To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+2. **Install dependencies**
+   ```bash
+   bundle install
+   ```
 
-## Contributing
+3. **Run the development server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+   Or use the provided script:
+   ```bash
+   ./tools/run.sh
+   ```
 
-Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
-to learn, inspire, and create. Any contributions you make are greatly appreciated.
-For details, see the "[Contributing Guidelines][contribute-guide]".
+4. **Open your browser**
+   Navigate to `http://localhost:4000` to see the site locally.
 
-## Credits
+### Building for Production
+```bash
+bundle exec jekyll build
+```
+Or use the test script:
+```bash
+./tools/test.sh
+```
 
-### Contributors
+## 🌐 GitHub Pages Deployment
 
-Thanks to [all the contributors][contributors] involved in the development of the project!
+This blog is automatically deployed to GitHub Pages using GitHub Actions. Here's how it works:
 
-[![all-contributors](https://contrib.rocks/image?repo=cotes2020/jekyll-theme-chirpy&columns=16)][contributors]
-<sub> — Made with [contrib.rocks](https://contrib.rocks)</sub>
+### Automatic Deployment
+1. **Push to main branch** - Any commit to the `main` branch triggers automatic deployment
+2. **GitHub Actions** - The site is built and deployed using Jekyll GitHub Actions
+3. **Live in minutes** - Changes appear at [saiharshak.github.io](https://saiharshak.github.io) within a few minutes
 
-### Third-Party Assets
+### Manual Setup (if needed)
+1. Go to your repository **Settings** → **Pages**
+2. Under **Source**, select **GitHub Actions**
+3. The Jekyll workflow should be automatically detected
 
-This project is built on the [Jekyll][jekyllrb] ecosystem and some [great libraries][lib], and is developed using [VS Code][vscode] as well as tools provided by [JetBrains][jetbrains] under a non-commercial open-source software license.
+### Custom Domain (Optional)
+To use a custom domain:
+1. Add your domain to **Settings** → **Pages** → **Custom domain**
+2. Update the `url` field in `_config.yml`
+3. Create a `CNAME` file in the root directory with your domain
 
-The avatar and favicon for the project's website are from [ClipartMAX][clipartmax].
+## 📁 Repository Structure
 
-## License
+```
+├── _posts/              # Blog posts
+├── _tabs/               # Sidebar navigation pages
+├── _data/               # Site data (authors, contact info, etc.)
+├── _includes/           # Reusable HTML components
+├── _layouts/            # Page layouts
+├── _sass/               # Stylesheets
+├── assets/              # Images, CSS, JS files
+├── tools/               # Build and development scripts
+├── _config.yml          # Site configuration
+└── README.md           # This file
+```
 
-This project is published under [MIT License][license].
+## ✍️ Writing Posts
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
-[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
-[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
-[open-container]: https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cotes2020/jekyll-theme-chirpy
-[jekyllrb]: https://jekyllrb.com/
-[clipartmax]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
-[demo]: https://cotes2020.github.io/chirpy-demo/
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
-[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
-[lib]: https://github.com/cotes2020/chirpy-static-assets
-[vscode]: https://code.visualstudio.com/
-[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+Create new posts in the `_posts/` directory with the naming convention:
+```
+YYYY-MM-DD-title-of-post.md
+```
+
+Each post should have front matter like:
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: YYYY-MM-DD HH:MM:SS +0530
+categories: [Category1, Category2]
+tags: [tag1, tag2]
+author: harsha
+---
+```
+
+## 🛠️ Customization
+
+- **Site settings**: Edit `_config.yml`
+- **About page**: Edit `_tabs/about.md`
+- **Contact info**: Edit `_data/contact.yml`
+- **Author info**: Edit `_data/authors.yml`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ using Jekyll and the Chirpy theme**
